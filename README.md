@@ -33,7 +33,7 @@ The purpose of this repository is to strengthen practical IT Support skills by s
 
 | Lab | Topic | Status |
 |------|-------|--------|
-| Lab 01 | Slow Computer Troubleshooting | ✅ Completed |
+| Lab 01 | Slow Computer Troubleshooting | [✅ Completed](https://github.com/Namratadandgawal/IT-Support-Labs/tree/main/Lab-01-Slow-Computer) |
 
 ## 🚧 Upcoming Labs
 
