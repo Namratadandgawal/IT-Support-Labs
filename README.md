@@ -34,6 +34,9 @@ The purpose of this repository is to strengthen practical IT Support skills by s
 | Lab | Topic | Status |
 |------|-------|--------|
 | Lab 01 | Slow Computer Troubleshooting | [✅ Completed](https://github.com/Namratadandgawal/IT-Support-Labs/tree/main/Lab-01-Slow-Computer) |
+| Lab 02 | Lab 2 – PC Won't Turn On (Hardware Troubleshooting) | [✅ Completed](https://github.com/Namratadandgawal/IT-Support-Labs/tree/main/Lab-02-PC-Wont-Turn-On) |
+
+
 
 ## 🚧 Upcoming Labs
 
