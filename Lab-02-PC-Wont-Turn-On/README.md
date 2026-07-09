@@ -5,7 +5,7 @@
 
 ---
 
-## 📋 Quick Summary
+##  Quick Summary
 
 | | |
 |---|---|
@@ -26,7 +26,7 @@
 
 ---
 
-## 🗣️ Step 1: User Complaint
+##  Step 1: User Complaint
 
 > "My desktop computer won't turn on at all. I pressed the power button, but nothing happens no lights, no sound, nothing."
 
@@ -40,13 +40,13 @@
 ### User's Response
 > "I checked the power cable, it's connected properly. When I press the power button, there's no light, no fan sound, nothing at all. Only my PC has this issue, others are working fine. This never happened before. No power cut recently, but I did clean my PC (opened the cabinet and cleaned dust) two days ago."
 
-**🔑 Key Clues:**
+** Key Clues:**
 - Zero power response (no lights/fan) → points to a power-chain or connection issue, not software
 - Cabinet was opened for cleaning 2 days ago → strong hint something got physically disturbed
 
 ---
 
-## 🔍 Step 2: Structured Hardware Check
+##  Step 2: Structured Hardware Check
 
 Hardware issues are always checked in order — **simplest/external first, complex/internal last** to avoid wasting time opening the cabinet unnecessarily.
 
@@ -59,7 +59,7 @@ Hardware issues are always checked in order — **simplest/external first, compl
 
 ---
 
-## ⚠️ Step 3: Safety Precautions (Before Opening the Cabinet)
+##  Step 3: Safety Precautions (Before Opening the Cabinet)
 
 Two non-negotiable safety steps before touching any internal components:
 
@@ -68,7 +68,7 @@ Two non-negotiable safety steps before touching any internal components:
 
 ---
 
-## 🧩 Step 4: Internal Inspection & Root Cause
+##  Step 4: Internal Inspection & Root Cause
 
 | Component Checked | Status |
 |---|---|
@@ -81,7 +81,7 @@ The RAM stick was not fully seated in its slot most likely dislodged while the u
 
 ---
 
-## ✅ Step 5: Fix Applied
+##  Step 5: Fix Applied
 
 1. Removed the RAM stick completely
 2. Cleaned the RAM slot of dust
@@ -92,7 +92,7 @@ The RAM stick was not fully seated in its slot most likely dislodged while the u
 
 ---
 
-## 🎫 Step 6: Service Desk Ticket Documentation
+##  Step 6: Service Desk Ticket Documentation
 
 **Ticket #:** INC001235
 **Issue Reported:** Desktop PC would not turn on — no lights, no fan sound, no response on power button press.
@@ -113,7 +113,7 @@ The RAM stick was not fully seated in its slot most likely dislodged while the u
 
 ---
 
-## 🎓 Key Learnings
+##  Key Learnings
 - Hardware checks should always go **external/simple → internal/complex** (socket → cable → strip → cabinet)
 - "Plugged in" ≠ "confirmed working" — always test, don't just visually inspect
 - **Safety first:** always unplug power and discharge static electricity before touching internal components
