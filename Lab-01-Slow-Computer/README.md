@@ -1,15 +1,15 @@
 # Lab 1 – Slow Computer Troubleshooting (Windows 10)
 
-## 🎯 Objective
+##  Objective
 Simulate and troubleshoot a slow Windows 10 PC using real IT Service Desk methodology — investigate before fixing, gather evidence, identify root cause, apply the least risky fix, and document the resolution professionally.
 
-## 🖥️ Lab Environment
+##  Lab Environment
 - **Platform:** VirtualBox
 - **OS:** Windows 10
 - **RAM:** 2 GB
 - **CPU:** 1 Core
 
-## 🧪 Problem Simulation
+##  Problem Simulation
 To recreate a real-world slow PC scenario, the following load was created on the VM:
 - Opened 10–15 Notepad windows
 - Opened 5 File Explorer windows
@@ -17,7 +17,7 @@ To recreate a real-world slow PC scenario, the following load was created on the
 - Opened Microsoft Edge with 8–10 tabs
 - Left the system running for 2–3 minutes to build up resource load
 
-## 🗣️ User Complaint (Simulated)
+##  User Complaint (Simulated)
 > "My computer is very slow. Everything takes a long time to open."
 
 ---
@@ -46,7 +46,7 @@ This ruled out software updates/installs as the cause and pointed toward a resou
 | Disk | 38% |
 | Network | 0% |
 
-📸 **Screenshot – Before Fix (High Resource Usage):**
+ **Screenshot – Before Fix (High Resource Usage):**
 ![Task Manager Before Fix](before.png)
 
 ---
@@ -132,7 +132,7 @@ Advise user to limit the number of simultaneously open browser tabs and applicat
 
 ---
 
-## 🎓 Key Learnings from This Lab
+##  Key Learnings from This Lab
 - Always **investigate before fixing** — jumping to a solution without evidence is a common mistake.
 - Check **CPU, Memory, and Disk together** — a high reading in one resource doesn't tell the full story.
 - High Disk usage can be a **symptom of low RAM (paging)**, not always a disk problem itself.
