@@ -11,7 +11,7 @@
 |---|---|
 | **Issue Type** | Peripheral / Driver |
 | **Reported By** | User (simulated) |
-| **Symptom** | Keyboard completely unresponsive — no input registers in any application |
+| **Symptom** | Keyboard completely unresponsive no input registers in any application |
 | **Root Cause** | Keyboard driver was missing/uninstalled, so Windows could not communicate with the device |
 | **Fix** | Restarted PC → Windows automatically reinstalled the driver |
 | **Status** |  Resolved |
@@ -56,7 +56,7 @@ To safely recreate this exact scenario inside the VM:
 3. Right-clicked the keyboard device → **Uninstall device** (the "Disable device" option was not available for this driver, so Uninstall was used instead)
 4. Restarted Windows
 
-**Result:** Keyboard stopped responding entirely after the uninstall — confirming the simulated symptom matched the reported issue (no input, no lights).
+**Result:** Keyboard stopped responding entirely after the uninstall confirming the simulated symptom matched the reported issue (no input, no lights).
 
  **Full Troubleshooting Evidence (Desktop → Device Manager → Uninstall → Restart → Verified Fix):**
 ![Keyboard Lab Evidence](keyboard-lab-evidence.png)
@@ -75,7 +75,7 @@ Once the keyboard driver was uninstalled, the keyboard became completely unrespo
 | **Method 2** | Left-click **Start** → click **Windows System** folder → click **Control Panel** → click **Device Manager** |
 | **Method 3** | Right-click **Start** → click **Run** → click inside the box → right-click → **Paste** (only works if `devmgmt.msc` was copied beforehand) |
 
-** Why this matters:** In a real support scenario, if a user's keyboard fails completely, you can still guide them (or a remote session) entirely through mouse clicks — Method 1 needs zero typing and works on every version of Windows 10. This is a small but genuinely practical trick worth remembering for real desk-side or remote support calls.
+** Why this matters:** In a real support scenario, if a user's keyboard fails completely, you can still guide them (or a remote session) entirely through mouse clicks Method 1 needs zero typing and works on every version of Windows 10. This is a small but genuinely practical trick worth remembering for real desk-side or remote support calls.
 
 ---
 
