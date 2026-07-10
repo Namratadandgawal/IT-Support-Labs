@@ -14,9 +14,9 @@
 | **Symptom** | Keyboard completely unresponsive — no input registers in any application |
 | **Root Cause** | Keyboard driver was missing/uninstalled, so Windows could not communicate with the device |
 | **Fix** | Restarted PC → Windows automatically reinstalled the driver |
-| **Status** | ✅ Resolved |
+| **Status** |  Resolved |
 
-## 🛠 Skills Practiced
+##  Skills Practiced
 - Device Manager Navigation & Driver Management
 - Peripheral / Input Device Troubleshooting
 - Windows Driver Reinstallation
@@ -27,7 +27,7 @@
 
 ---
 
-## 🗣️ Step 1: User Complaint
+##  Step 1: User Complaint
 
 > "My keyboard suddenly stopped working. I can't type anything, even in Notepad or the search bar."
 
@@ -41,13 +41,13 @@
 ### Simulated User Response
 > "It's a wired USB keyboard. I tried another USB port, still not working. It happened suddenly today. When I press Caps Lock, no light turns on at all. No updates that I know of."
 
-**🔑 Key Clues:**
+** Key Clues:**
 - No lights respond at all → points toward a driver/detection issue rather than a physical fault
 - Tried a different port with no change → rules out a faulty USB port
 
 ---
 
-## 🔍 Step 2: Reproducing the Issue (Lab Simulation)
+##  Step 2: Reproducing the Issue (Lab Simulation)
 
 To safely recreate this exact scenario inside the VM:
 
@@ -58,12 +58,12 @@ To safely recreate this exact scenario inside the VM:
 
 **Result:** Keyboard stopped responding entirely after the uninstall — confirming the simulated symptom matched the reported issue (no input, no lights).
 
-📸 **Full Troubleshooting Evidence (Desktop → Device Manager → Uninstall → Restart → Verified Fix):**
+ **Full Troubleshooting Evidence (Desktop → Device Manager → Uninstall → Restart → Verified Fix):**
 ![Keyboard Lab Evidence](keyboard-lab-evidence.png)
 
 ---
 
-## 🖱️ Step 3: Navigating Windows Without a Keyboard
+##  Step 3: Navigating Windows Without a Keyboard
 
 Once the keyboard driver was uninstalled, the keyboard became completely unresponsive — which meant Device Manager had to be reopened **using the mouse only**. This is a genuinely useful real-world skill, since a support engineer often has to guide a user (or work on their own machine) when the very input device needed for troubleshooting is the one that's broken.
 
@@ -75,11 +75,11 @@ Once the keyboard driver was uninstalled, the keyboard became completely unrespo
 | **Method 2** | Left-click **Start** → click **Windows System** folder → click **Control Panel** → click **Device Manager** |
 | **Method 3** | Right-click **Start** → click **Run** → click inside the box → right-click → **Paste** (only works if `devmgmt.msc` was copied beforehand) |
 
-**🎓 Why this matters:** In a real support scenario, if a user's keyboard fails completely, you can still guide them (or a remote session) entirely through mouse clicks — Method 1 needs zero typing and works on every version of Windows 10. This is a small but genuinely practical trick worth remembering for real desk-side or remote support calls.
+** Why this matters:** In a real support scenario, if a user's keyboard fails completely, you can still guide them (or a remote session) entirely through mouse clicks — Method 1 needs zero typing and works on every version of Windows 10. This is a small but genuinely practical trick worth remembering for real desk-side or remote support calls.
 
 ---
 
-## 🧩 Step 4: Diagnosis
+##  Step 4: Diagnosis
 
 | Check | Observation |
 |---|---|
@@ -92,7 +92,7 @@ The keyboard driver had been removed (uninstalled), so Windows no longer recogni
 
 ---
 
-## ✅ Step 5: Fix Applied
+##  Step 5: Fix Applied
 
 1. Restarted the PC (navigated using mouse only, via Method 1 above)
 2. Windows automatically detected the missing keyboard driver during restart and reinstalled it
@@ -104,7 +104,7 @@ The keyboard driver had been removed (uninstalled), so Windows no longer recogni
 
 ---
 
-## 📚 Step 6: Alternative Troubleshooting Methods (Reference)
+##  Step 6: Alternative Troubleshooting Methods (Reference)
 
 While a restart resolved this lab, a real Service Desk engineer should know multiple ways to approach a "keyboard not working" ticket, depending on the situation:
 
@@ -116,11 +116,11 @@ While a restart resolved this lab, a real Service Desk engineer should know mult
 | **VirtualBox USB Passthrough** | Disconnect/reconnect the USB device in VirtualBox's USB settings | Working inside a VM where the host isn't passing the device through correctly |
 | **Physical Port Test** | Move keyboard to a different USB port | Ruling out a faulty port without touching software at all |
 
-**🎓 Why this matters:** In a real job, not every keyboard issue has the same root cause. Knowing multiple resolution paths — and which one fits which symptom — is what separates a fresher from a confident engineer during an interview.
+** Why this matters:** In a real job, not every keyboard issue has the same root cause. Knowing multiple resolution paths — and which one fits which symptom — is what separates a fresher from a confident engineer during an interview.
 
 ---
 
-## 🎫 Step 7: Service Desk Ticket Documentation
+##  Step 7: Service Desk Ticket Documentation
 
 **Ticket #:** INC001236
 **Issue Reported:** User's USB keyboard stopped responding completely — no input in any application, no Caps Lock/Num Lock light response.
@@ -136,11 +136,11 @@ While a restart resolved this lab, a real Service Desk engineer should know mult
 
 **Recommendation:** If this recurs after future updates, recommend checking Device Manager first before assuming hardware failure. If a restart doesn't resolve it, use Action → Scan for hardware changes to manually trigger driver reinstallation.
 
-**Status:** ✅ Resolved
+**Status:**  Resolved
 
 ---
 
-## 🎓 Key Learnings
+##  Key Learnings
 - A completely unresponsive keyboard (no lights at all) often points to a **driver/OS-level issue**, not physical damage.
 - Not all devices show a "Disable" option in Device Manager — **Uninstall** is a valid alternative for simulating/fixing driver issues.
 - A **simple restart** can be enough for Windows to automatically reinstall a missing driver — if not, **Scan for hardware changes** is the manual backup.
