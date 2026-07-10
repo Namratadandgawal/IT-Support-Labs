@@ -5,7 +5,7 @@
 
 ---
 
-## 📋 Quick Summary
+##  Quick Summary
 
 | | |
 |---|---|
